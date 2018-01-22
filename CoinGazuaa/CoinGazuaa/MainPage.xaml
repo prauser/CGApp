@@ -1,11 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:local="clr-namespace:CoinGazuaa"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="CoinGazuaa.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
-</ContentPage>
+    <NavigationPage Title="Market">
+        <x:Arguments>
+            <local:MarketPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Trade">
+        <x:Arguments>
+            <local:TradePage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Balance">
+        <x:Arguments>
+            <local:MyBalancePage />
+        </x:Arguments> 
+    </NavigationPage>
+    <NavigationPage Title="Account">
+        <x:Arguments>
+            <local:AccountPage/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Settings">
+        <x:Arguments>
+            <local:SettingPage/>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

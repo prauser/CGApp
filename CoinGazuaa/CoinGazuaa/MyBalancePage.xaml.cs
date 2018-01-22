@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace CoinGazuaa
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class MyBalancePage : ContentPage
+	{
+		public MyBalancePage ()
+		{
+			InitializeComponent ();
+		}
+	}
+}
